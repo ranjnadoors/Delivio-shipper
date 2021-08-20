@@ -25,11 +25,8 @@
   }
   
   .pant-bg{
-   background-image: url(../shipper-img/Group\ 252-new.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 35vh;
-   max-height: 100%;
+   position: absolute;
+   
    max-width: 100%;
   }
   
@@ -72,16 +69,15 @@
 #home h2{
    font-family: Merriweather;
     font-style: normal;
+    position: relative;
     font-weight: bold;
     font-size: 43px;
     line-height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
     letter-spacing: 0.5px;
     color: #FFFFFF;
-}    
+} 
+   
 #home{
     background: #2E2E2E;
 } 
@@ -89,7 +85,7 @@
     background: #2E2E2E;
 }
 #home .form-control{
-    width: 505px;
+   
     height: 42px;
 }
 #form-bg label{
@@ -180,11 +176,11 @@ top: 49%;
 }
 #total-approx .form-control{
     border: 1px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
     background: transparent;
     color: white;
-    width: 450px;
+    
     height: 53px;
 }
 #total-approx input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -233,7 +229,7 @@ input[type="radio"]:checked + label  {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 31px;
     display: flex;
     align-items: center;
@@ -282,37 +278,52 @@ input[type="radio"]:checked + label  {
         color: white;
         background: #8BBD43;
     }
-   
+    #total-approx span{
+        font-size: 14px;
+    }
+   .fa-globe{
+    color: white; 
+    font-size: 20px;
+   }
    /* ***************************media queries******************************/
 /* Smartphones (portrait) ----------- */
 @media (min-width: 357px) and (max-width: 767px) {
     
     #home li {
         line-height: 30px;
+        font-size: 20px;
     }
     #form-bg label{
         font-size: 16px;
     }
-    #space-type h6,#total-approx h2,#local-delivery h2 ,#main-footer h4, #footer .btn{
+    #space-type h6,#total-approx h2,#local-delivery h2 ,#main-footer h4, #footer .btn {
+        font-size: 18px;
+    }
+    #radio-btn label{
         font-size: 16px;
     }
-   
     #home h2 {
-        font-size: 35px;
+        font-size: 30px;
         }
    .sq-ft{
         left: 68%;
         font-size: 16px;
     }
-    #home .form-control{
-        width: 320px;
+    #home h3 {
+        font-size: 30px;
     }
-    #total-approx .form-control{
-        width: 258px;
+    .pant-bg{
+        width: 312px;
+    }
+    #home h3 {
+        line-height: 50px;
     }
 }
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    
+    .pant-bg{
+        width: 691px;
+    }
     #home h3{
         font-size: 50px;
     }
@@ -322,10 +333,17 @@ input[type="radio"]:checked + label  {
     #form-bg label{
         font-size: 18px;
     }
-    #space-type h6,#total-approx h2,#local-delivery h2 ,#main-footer h4, #footer .btn{
-        font-size: 18px;
-    }
-        .sq-ft{
+   .sq-ft{
         left: 61%;
     }
+    
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+.pant-bg{
+    width: 85%;
+}
+#home h2 {
+   text-align: center !important;
+   margin-top: 0px;
+}
 }
