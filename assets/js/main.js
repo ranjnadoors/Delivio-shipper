@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/********$(document).ready(function () {
     $('.myImage-1').on("click", function () {
         var checked = $(this).next('.myHiddenCheckbox').prop('checked');
         if (checked == false) {
@@ -11,4 +11,4 @@ $(document).ready(function () {
             $(this).attr("src", "shipper-img/Group 307.png");
         }
     });
-});
+});************/

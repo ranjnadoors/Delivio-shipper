@@ -289,6 +289,27 @@ input[type="radio"]:checked + label  {
     background-image: url(../shipper-img/Group\ 252-new.png);
     background-size: 100% 100%;
    }
+   /***************************checkboxes*********************/
+   input[type=checkbox] {
+    display:none;
+  }
+  
+  input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("../shipper-img/Group\ 282.png") no-repeat;
+    height: 75px;
+    width: 75px;;
+    background-size: 50%;
+  }
+  
+  input[type=checkbox]:checked + label {
+    background:url("../shipper-img/Group\ 307.png") no-repeat;
+    height: 75px;
+    width: 75px;
+    display:inline-block;
+    background-size: 50%;
+  }
    /* ***************************media queries******************************/
 /* Smartphones (portrait) ----------- */
 @media (min-width: 320px) and (max-width: 480px) {
